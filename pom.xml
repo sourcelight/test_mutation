@@ -8,8 +8,6 @@
     <artifactId>mutation_test_example</artifactId>
     <version>1.0-SNAPSHOT</version>
     <build>
-        <sourceDirectory>main/src/java</sourceDirectory>
-        <testSourceDirectory>main/test/java</testSourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -28,7 +26,7 @@
                         <param>com.codemanship.marsrover.*</param>
                     </targetClasses>
                     <targetTests>
-                        <param>com.codemanship.marsrover.RoverTest</param>
+                        <param>com.codemanship.marsrover.*</param>
                     </targetTests>
                 </configuration>
             </plugin>
@@ -42,6 +40,4 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-
 </project>
